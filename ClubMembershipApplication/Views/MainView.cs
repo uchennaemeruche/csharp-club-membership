@@ -5,7 +5,7 @@ namespace ClubMembershipApplication.Views
 {
     public class MainView : IView
     {
-        public IFieldValidator? FieldValidator => null;
+        public IFieldValidator FieldValidator => null;
 
         IView _registerView;
         IView _loginView;

@@ -75,12 +75,12 @@ namespace ClubMembershipApplication.FieldValidators
 
                 case FieldConstant.UserRegistrationField.FirstName:
                     fieldInvalidMessage = (!_requiredValidDel(fieldValue)) ? $"You must enter a value for {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)}{Environment.NewLine}" : "";
-                    fieldInvalidMessage = (fieldInvalidMessage == "" && !_stringLengthValidDel(fieldValue, UserName_Min_Length, UserName_Max_Length)) ? $"The length for field: {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)} must be between {UserName_Min_Length} and {UserName_Max_Lenth} " : "";
+                    fieldInvalidMessage = (fieldInvalidMessage == "" && !_stringLengthValidDel(fieldValue, UserName_Min_Length, UserName_Max_Length)) ? $"The length for field: {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)} must be between {UserName_Min_Length} and {UserName_Max_Length} " : "";
                     break;
 
                 case FieldConstant.UserRegistrationField.LastName:
                     fieldInvalidMessage = (!_requiredValidDel(fieldValue)) ? $"You must enter a value for {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)}{Environment.NewLine}" : "";
-                    fieldInvalidMessage = (fieldInvalidMessage == "" && !_stringLengthValidDel(fieldValue, UserName_Min_Length, UserName_Max_Length)) ? $"The length for field: {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)} must be between {UserName_Min_Length} and {UserName_Max_Lenth} " : "";
+                    fieldInvalidMessage = (fieldInvalidMessage == "" && !_stringLengthValidDel(fieldValue, UserName_Min_Length, UserName_Max_Length)) ? $"The length for field: {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)} must be between {UserName_Min_Length} and {UserName_Max_Length} " : "";
                     break;
                 case FieldConstant.UserRegistrationField.Password:
                     fieldInvalidMessage = (!_requiredValidDel(fieldValue)) ? $"You must enter a value for field {Enum.GetName(typeof(FieldConstant.UserRegistrationField), userRegistrationField)}{Environment.NewLine}" : "";

@@ -70,7 +70,7 @@ namespace ClubMembershipApplication.Views
         private void RegisterUser()
         {
 
-            _register.Register(_fieldValidator!.FieldArray);
+            _register.Register(_fieldValidator.FieldArray);
 
             CommonOutputFormat.ChangeFontColor(FontTheme.Success);
             Console.WriteLine("User successfully registered. Please press any key to login");
@@ -96,7 +96,7 @@ namespace ClubMembershipApplication.Views
 
         private bool FieldValid(FieldConstant.UserRegistrationField field, string fieldValue)
         {
-            if(!_fieldValidator!.validatorDel((int)field, fieldValue, _fieldValidator.FieldArray, out string invalidMessage))
+            if(!_fieldValidator.validatorDel((int)field, fieldValue, _fieldValidator.FieldArray, out string invalidMessage))
             {
                 CommonOutputFormat.ChangeFontColor(FontTheme.Danger);
 

@@ -11,7 +11,7 @@ namespace ClubMembershipApplication.Views
 
         ILogin _loginUser;
 
-        public IFieldValidator? FieldValidator => null;
+        public IFieldValidator FieldValidator => null;
 
         public UserLoginView(ILogin login)
         {
