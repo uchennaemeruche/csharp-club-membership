@@ -25,10 +25,10 @@ namespace ClubMembershipApplication.Views
 
             CommonOutputText.WriteRLoginHeading();
 
-            Console.WriteLine("Please enter your email address");
+            Console.Write("Please enter your email address: ");
             string emailAddress = Console.ReadLine()!;
 
-            Console.WriteLine("Please enter your password");
+            Console.Write("Please enter your password:");
             string password = Console.ReadLine()!;
 
             User user = _loginUser.Login(emailAddress, password);
